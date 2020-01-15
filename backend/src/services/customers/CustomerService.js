@@ -2,7 +2,7 @@ const express = require('express');
 const Customer = require('../../models/Customer');
 
 module.exports = {
-    async index() {
+    async index () {
         let customers = await Customer.find({});
 
         if (customers.length > 0) {
@@ -12,7 +12,7 @@ module.exports = {
         }
     },
 
-    async store(data) {
+    async store (data) {
         const { full_name, phone, email, producer = 0, 
             company = 0, cep = "00000-000", street = "", 
             number = 00, city = "", state = "", 

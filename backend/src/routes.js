@@ -2,6 +2,7 @@ const { Router } = require('express');
 
 // Controllers API
 const CustomerApiController = require('./controllers/apis/CustomerApiController');
+const CarApiController = require('./controllers/apis/CarApiController');
 
 const router = Router();
 
@@ -11,5 +12,10 @@ router.get('/customers', CustomerApiController.index);
 router.post('/customers', CustomerApiController.store);
 // router.put('/customers', CustomerApiController.update);
 // router.delete('/customers', CustomerApiController.delete);
+
+
+// Cars Routes API
+router.get('/cars', CarApiController.index);
+router.post('/cars', CarApiController.store);
 
 module.exports = router;
