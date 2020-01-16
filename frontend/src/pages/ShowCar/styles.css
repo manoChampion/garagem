@@ -1,0 +1,40 @@
+div.car-container {
+    align-items: center;
+    justify-content: center;
+}
+
+div.card {
+    flex: 1 0 25%;
+    height: 80px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    max-width: 25%;
+    transition: all .2s;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.card:hover {
+    border-color: #000;
+}
+
+div.w100 {
+    max-width: 100%;
+}
+
+div.card-title {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+div.card-body {
+    height: 100%;
+    vertical-align: top;
+}
+
+div.card-body p {
+    padding: 35px 5px;
+}

@@ -5,8 +5,8 @@ const CustomerSchema = new mongoose.Schema({
     full_name: String,
     phone: String,
     email: String,
-    producer: {type: Number, default: 0},
-    company: {type: Number, default: 0},
+    producer: {type: Boolean, default: false},
+    company: {type: Boolean, default: false},
     cpf: String,
     cnpj: String,
     address: {

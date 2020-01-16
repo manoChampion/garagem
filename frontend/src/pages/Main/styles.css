@@ -1,0 +1,47 @@
+div.container {
+    max-width: 700px;
+    margin: 20px auto 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+a.card {
+    flex: 1 0 25%;
+    height: 150px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    max-width: 25%;
+    transition: all .2s;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.card:hover {
+    opacity: 0.7;
+    border-color: #000;
+}
+
+div.card h1 {
+    font-weight: bold;
+}
+
+div.card p small {
+    font-size: 12px;
+}
+
+div.card-image {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.card-image img {
+    height: 90px;
+}

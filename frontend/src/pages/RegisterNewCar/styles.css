@@ -1,0 +1,27 @@
+div#address_div {
+    display: none;
+}
+
+.form {
+    width: 100%;
+}
+
+.form-group {
+    display: block;
+    margin: 5px 0;
+    flex: 1 0 100%;
+}
+
+.form-group > label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group > input:not([type="checkbox"]) {
+    display: block;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #333333;
+    outline: none;
+    padding: 0 10px;
+}

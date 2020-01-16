@@ -13,8 +13,7 @@ module.exports = {
     },
 
     async store (data) {
-        const { full_name, phone, email, producer = 0, 
-            company = 0, cep = "00000-000", cep_data, number } = data;
+        const { full_name, phone, email, cep = "00000-000", cep_data, number, producer = false, company = false } = data;
         
 
         const customer = await Customer.create({
