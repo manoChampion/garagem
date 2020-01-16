@@ -4,9 +4,12 @@ const VisitSchema = new mongoose.Schema({
     km_arrival: String,
     date_arrival: {
         type: Date,
-        default: (new Date()).getTime()
+        default: Date.now()
     },
-    km_departure: String,
+    km_departure: {
+        type: String,
+        default: "0"
+    },
     date_departure: Date
 });
 
