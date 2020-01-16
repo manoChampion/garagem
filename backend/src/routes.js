@@ -18,4 +18,10 @@ router.post('/customers', CustomerApiController.store);
 router.get('/cars', CarApiController.index);
 router.post('/cars', CarApiController.store);
 
+
+// Test Route
+router.post('/test', (req, res) => {
+    console.log(req.body);
+}); 
+
 module.exports = router;
