@@ -14,10 +14,9 @@ module.exports = {
 
     async store (data) {
         const { full_name, phone, email, producer = 0, 
-            company = 0, cep = "00000-000", street = "", 
-            number = 00, city = "", state = "", 
-            country = "" } = data;
+            company = 0, cep = "00000-000", cep_data, number } = data;
         
+
         const customer = await Customer.create({
             full_name,
             phone,
@@ -26,11 +25,10 @@ module.exports = {
             company,
             address: {
                 cep,
-                street,
+                street: cep_data.logradouro,
                 number,
-                city,
-                state,
-                country
+                city: cep_data.cidade,
+                state: cep_data.estado_info.nome,
             }
         });
 

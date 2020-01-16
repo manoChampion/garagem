@@ -6,7 +6,10 @@ const AddressSchema = new mongoose.Schema({
     number: String,
     city: String, 
     state: String,
-    country: String
+    country: {
+        type: String,
+        default: "Brasil",
+    },
 });
 
 module.exports = AddressSchema;
